@@ -12,7 +12,7 @@ Or copy this link:
 `https://wearetasku.herokuapp.com/`
 
 ## Languages 
-HTML5 & CSS3 & SASS & JS & VUE & VUEX
+HTML5 & CSS3 & SASS & JS & VUE.js
 
 ## Libraries and more
 Node.js libraries
