@@ -1,0 +1,141 @@
+.members {
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 0 1px black;
+  padding: 5px 10px;
+  z-index: 1500;
+  width: 200px;
+  margin-top: -5px;
+  border-radius: 4px;
+  max-height: 400px;
+  overflow-y: auto;
+  animation: expand-members 0.4s;
+
+  @include for-mobile-layout {
+    height: 320px;
+  }
+  &.top-right {
+    right: 15px;
+    right: 2px;
+    top: 40px;
+  }
+  &.top-left {
+    left: -180px;
+    top: 25px;
+    @include for-max-narrow-layout {
+      left: -155px;
+      top: 35px;
+    }
+  }
+  .member {
+    position: relative;
+    // padding-bottom: 0.2rem;
+    height: fit-content;
+    margin-bottom: 3px;
+    width: 100%;
+
+    .user-dateils-container {
+      padding: 5px;
+      border-radius: 5px;
+      transition: 0.3s;
+      width: inherit;
+
+      &:hover {
+        background-color: #f3f3f3;
+      }
+    }
+
+    .member-name {
+      margin: 0;
+      font-size: 1rem;
+      text-align: left;
+      padding-left: 5px;
+      text-align: left;
+      padding-left: 10px;
+    }
+    .action-container {
+      width: 25px;
+      height: 25px;
+      margin-left: 5px;
+      position: relative;
+      cursor: pointer;
+      .action-icon {
+        transition: 0.3s;
+
+        color: $clr1;
+        position: absolute;
+        right: 3px;
+        top: 6px;
+        cursor: pointer;
+        &:hover {
+          color: $clr2;
+        }
+      }
+    }
+  }
+
+  h3.title-members {
+    font-size: 1.1rem;
+    margin: rem(10px) 0;
+  }
+
+  .first {
+    border-bottom: 1px solid rgb(211, 211, 211);
+    li:last-child {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.members-list-section {
+  .title-members {
+    padding-top: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+.members-list {
+  height: 100vh;
+  overflow-y: auto;
+  .member {
+    width: 100%;
+    display: flex;
+    button {
+      align-self: flex-end;
+    }
+    .user-container {
+      .user-avatar {
+        margin-right: 4px;
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+  .member-list-btn {
+    margin: 0;
+    height: 35px;
+    padding: 0 10px;
+    font-family: 'roboto-light';
+    border: 1px solid #e6e9ef;
+    color: #323338;
+  }
+}
+
+.members-actions {
+  position: relative;
+}
+.member-show {
+  margin-left: -8px;
+}
+
+
+@keyframes expand-members {
+  0% {
+    opacity: 0;
+    // width: 30px;
+  }
+  100% {
+    opacity: 1;
+    // width: 200px;
+  }
+}

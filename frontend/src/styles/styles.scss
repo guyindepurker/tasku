@@ -1,0 +1,54 @@
+// SETUP
+@import 'setup/variables';
+@import 'setup/mixins';
+@import 'setup/functions';
+@import 'basics/fonts';
+// BASICS
+@import 'basics/base';
+@import 'basics/buttons';
+@import 'basics/helpers';
+@import 'basics/layout';
+@import 'basics/tooltip';
+//PAGES
+@import 'pages/home-page';
+@import 'pages/board-app';
+@import 'pages/user-details';
+@import 'pages/task-details';
+@import 'pages/app-login-signup';
+
+// COMPONENTS
+@import 'cmps/nav-menu';
+@import 'cmps/board-list';
+@import 'cmps/task-preview';
+@import 'cmps/group-list';
+@import 'cmps/group-preview';
+@import 'cmps/popup-menu';
+@import 'cmps/task-list';
+@import 'cmps/label-picker';
+@import 'cmps/board-filter';
+@import 'cmps/task-posts';
+@import 'cmps/colors-menu';
+@import 'cmps/add-members';
+@import 'cmps/filter-form';
+@import 'cmps/task-activities';
+@import 'cmps/board-header';
+@import 'cmps/chat-cmp';
+@import 'cmps/user-msg';
+@import 'cmps/notifs-modal';
+@import 'cmps/upload-img';
+@import 'cmps/avatar';
+@import 'cmps/sidebar';
+@import 'cmps/board-activites';
+@import 'cmps/add-members';
+@import 'cmps/notif-preview';
+@import 'cmps/dashboard';
+@import 'cmps/box-item';
+// Trello
+@import 'cmps/trello/status.preview';
+@import 'cmps/trello/task.preview';
+@import 'cmps/trello/trello';
+@import 'cmps/trello/task-details'
+
+
+
+
