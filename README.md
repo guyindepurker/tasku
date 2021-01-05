@@ -7,7 +7,7 @@ written with Vue.js,Vuex, Node.js and Mongo atlas – a team project management 
 You can see the app at the following link:
 [GitHub Pages](https://wearetasku.herokuapp.com/)
 
-Or copy this link
+Or copy this link:
 
 `https://wearetasku.herokuapp.com/`
 
