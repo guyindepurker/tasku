@@ -1,0 +1,74 @@
+.task-posts {
+  // @include for-normal-layout {
+  //   margin-top: 50px;
+  // }
+  .posts-list {
+    border-top: 1px solid rgb(233, 232, 230);
+ 
+  }
+  form {
+    .text-edit-post {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    button {
+      color: white;
+      transition-duration: 0.3s;
+      position: absolute;
+      top: 90px;
+      right: 0;
+      padding: 8px 14px;
+    }
+    .el-input-text-editor {
+      font-family: Arial, Helvetica, sans-serif;
+      display: block;
+      resize: none;
+      padding: 5px 15px;
+      line-height: 1.5;
+      width: 100%;
+      font-size: inherit;
+      color: #606266;
+      background-color: #fff;
+      background-image: none;
+      border: 1px solid #dcdfe6;
+      border-radius: 4px;
+      //   transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+      &:focus {
+        outline: none !important;
+        border: 1.5px solid $clr1;
+      }
+    }
+  }
+  .task-post-card {
+    background-color: white;
+    border-radius: rem(8px);
+    border: 1px solid;
+    border-color: #e6e9ef;
+    width: 99%;
+    padding: 15px;
+    margin-top: 10px;
+    .by-user {
+      font-family: 'roboto-regular', 'Ariel';
+      margin-left: 3px;
+    }
+    .delete-post-btn {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background-color: transparent;
+      padding: 8px 10px;
+      font-size: 0.9rem;
+      &:hover {
+        transform: scale(1.08);
+      }
+    }
+  }
+  .task-post-container {
+    font-weight: bold;
+    padding: 0 3px;
+    .uploaded-img {
+      width: 100px;
+      // height: 100px;
+    }
+  }
+}
